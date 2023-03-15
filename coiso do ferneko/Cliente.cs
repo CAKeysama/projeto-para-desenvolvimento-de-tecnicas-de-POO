@@ -11,12 +11,14 @@ namespace coiso_do_ferneko
         public int Id;
         public string Name;
         public string Telefone;
-
-        public Cliente(int id, string name, string telefone)
+        private Endereco Endereco;
+            
+        public Cliente(int id, string name, string telefone, Endereco endereco)
         {
             Id = id;
             Name = name;
             Telefone = telefone;
+            Endereco = endereco;
         }
 
         public int getId()
@@ -48,7 +50,15 @@ namespace coiso_do_ferneko
         {
             Telefone = telefone;
         }
-    
+        public Endereco getEndereco()
+        {
+            return Endereco;
+        }
+
+        public void setEndereco(Endereco endereco)
+        {
+            Endereco = endereco;
+        }
     }
 }
 
