@@ -26,6 +26,12 @@ namespace coiso_do_ferneko
             Estado = estado;
         }
 
+        public string EnderecoCompleto() 
+        { return Rua + " " + Numero + ", " + CEP + " " + Bairro + ", " + Cidade + " " + Estado; }
+
+        public string EnderecoCurto() 
+        { return Rua + " " + Numero; }
+
         public void setRua(string rua) 
         { Rua = rua; }
 
