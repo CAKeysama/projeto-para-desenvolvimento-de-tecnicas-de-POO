@@ -16,11 +16,11 @@ Cliente c4 = new Cliente(4, "Matheus", "2452454658", e1);
 Console.WriteLine(c1.getEndereco().EnderecoCompleto() );
 c1.getEndereco().setRua("prudente de Moraes");
 
-Carro car = new Carro();
-car.Marca = "VW";
-car.NumeroPortas = 4;
-car.NumeroRodas = 4;
-car.Cor = "roxo";
+Carro carro = new Carro();
+carro.Marca = "VW";
+carro.NumeroPortas = 4;
+carro.NumeroRodas = 4;
+carro.Cor = "roxo";
 
 Aviao aviao = new Aviao();
 aviao.PortasInternas = 20;
@@ -34,4 +34,20 @@ Bicicleta bic = new Bicicleta();
 bic.PagaImposto = false;
 
 Console.WriteLine(aviao.ExibirDados());
-Console.WriteLine(car.ExibirDados());
+Console.WriteLine(carro.ExibirDados());
+
+List<Veiculos> listaVeiculos = new List<Veiculos>();
+listaVeiculos.Add(carro);
+listaVeiculos.Add(aviao);
+listaVeiculos.Add(bic);
+
+List<Cliente> listaCliente = new List<Cliente>();
+listaCliente.Add(c1);
+listaCliente.Add(c2);
+listaCliente.Add(c3);
+listaCliente.Add(c4);
+
+foreach (var item in listaCliente) 
+{
+    Console.WriteLine(item.getName());
+}
