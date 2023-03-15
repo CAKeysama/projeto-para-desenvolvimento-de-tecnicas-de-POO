@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace coiso_do_ferneko
 {
-    internal class Pessoa
+    internal class Cliente
     {
         public int Id;
         public string Name;
         public string Telefone;
 
-        public Pessoa(int id, string name, string telefone)
+        public Cliente(int id, string name, string telefone)
         {
             Id = id;
             Name = name;
